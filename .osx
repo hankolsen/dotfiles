@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Use TouchId for `sudo`
+echo "auth sufficient pam_tid.so" | sudo tee -a  /etc/pam.d/sudo >/dev/null
+
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=%80
 
