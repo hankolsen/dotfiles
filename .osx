@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=%80
+
+# Prevent Photos from opening automatically when devices are plugged in
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
