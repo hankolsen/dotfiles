@@ -11,7 +11,9 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 # Install XCode Command Line Tools
 xcode-select --install &> /dev/null
-
+# Agreed to the Xcode license 
+sudo xcodebuild -license accept
+ 
 # Install Brew and Brew Cask 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/cask
