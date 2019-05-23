@@ -7,3 +7,4 @@ brew update
 brew upgrade
 
 brew install node # This installs `npm` too using the recommended installation method
+brew install trash # rm on steroids
