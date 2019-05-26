@@ -14,3 +14,9 @@ brew install zsh
 
 # Docker
 brew install docker docker-compose
+
+# Mac App Store CLI
+brew install mas
+mas install 1091189122 # Bear
+mas install 972028355  # Micro Snitch
+mas install 1176895641 # Spark email client
