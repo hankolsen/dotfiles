@@ -6,6 +6,9 @@ echo "auth sufficient pam_tid.so" | sudo tee -a  /etc/pam.d/sudo >/dev/null
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=%80
 
+# Show the ~/Library folder
+chflags nohidden ~/Library/
+
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
