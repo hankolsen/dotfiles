@@ -12,6 +12,9 @@ chflags nohidden ~/Library/
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+# Prevent iTunes from opening automatically when devices are plugged in
+defaults write com.apple.iTunesHelper ignore-devices 1
+
 # Install XCode Command Line Tools
 xcode-select --install &> /dev/null
 # Agreed to the Xcode license 
