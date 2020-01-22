@@ -6,7 +6,6 @@ brew cask install dropbox
 brew cask install google-chrome
 brew cask install hyper
 brew cask install little-snitch
-brew cask install micro-snitch
 brew cask install mullvadvpn
 brew cask install postman
 brew cask install sizeup
