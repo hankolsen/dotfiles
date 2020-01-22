@@ -2,6 +2,7 @@
 
 # Use TouchId for `sudo`
 echo "auth sufficient pam_tid.so" | sudo tee -a  /etc/pam.d/sudo >/dev/null
+# Also, in iTerm2 disable `Preferences > Advanced > Allow sessions to survive logging out and back in`
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=%80
