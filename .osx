@@ -7,6 +7,24 @@ echo "auth sufficient pam_tid.so" | sudo tee -a  /etc/pam.d/sudo >/dev/null
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=%80
 
+## Finder
+# Always show Finder path bar
+defaults write com.apple.finder ShowPathbar -bool true
+# Always show Finder status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+# Show full path in Finder title:
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES; killall Finder
+
+# Speed up window open animation
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.03
+# Something something Disable Automatic Window Animations§
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
+
+# Don't write .DS_Store to Network resp. USB Volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+
 # Show the ~/Library folder
 chflags nohidden ~/Library/
 
