@@ -15,6 +15,9 @@ brew install zsh
 # Docker
 brew install docker docker-compose
 
+# Automatic window/pane layout for iTerm2
+brew install TomAnthony/brews/itermocil
+
 # Mac App Store CLI
 brew install mas
 mas install 1091189122 # Bear
