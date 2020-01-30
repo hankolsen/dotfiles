@@ -7,6 +7,9 @@ echo "auth sufficient pam_tid.so" | sudo tee -a  /etc/pam.d/sudo >/dev/null
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=%80
 
+# Set screenshot format to jpg
+defaults write com.apple.screencapture type jpg;killall SystemUIServer
+
 ## Finder
 # Always show Finder path bar
 defaults write com.apple.finder ShowPathbar -bool true
