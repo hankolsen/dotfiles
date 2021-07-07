@@ -1,0 +1,19 @@
+# Docker Containers
+tmutil addexclusion /Users/hank/Library/Containers
+
+# node_modules in projects/
+cd ~/projects
+find `pwd` -name 'node_modules' -prune -type d -exec tmutil addexclusion {} \; -exec tmutil isexcluded {} \;
+
+# Dropbox
+tmutil addexclusion /Users/hank/Dropbox/
+
+# Logs
+tmutil addexclusion /Users/hank/Library/Logs
+
+# Some caches
+tmutil addexclusion /Users/hank/Library/Caches/Cypress
+tmutil addexclusion /Users/hank/Library/Caches/com.spotify.client
+tmutil addexclusion /Users/hank/Library/Caches/Yarn
+
+
