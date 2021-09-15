@@ -24,3 +24,5 @@ mas install 1091189122 # Bear
 mas install 972028355  # Micro Snitch
 mas install 1176895641 # Spark email client
 mas install 1286743037 # Fenêtre (Picture-in-Picture)
+mas install 904280696  # Things
+mas install 1510445899 # Meeter
