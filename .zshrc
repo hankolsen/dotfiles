@@ -124,3 +124,8 @@ if [ -f '/Users/hank/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/hank/googl
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/hank/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hank/google-cloud-sdk/completion.zsh.inc'; fi
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+bindkey "ç" fzf-cd-widget
+
