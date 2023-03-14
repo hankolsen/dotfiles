@@ -23,6 +23,10 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.03
 # Something something Disable Automatic Window Animations§
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
 
+# Faster hide/show of dock
+defaults write com.apple.dock autohide-delay -float 0 && killall Dock
+defaults write com.apple.dock "autohide-time-modifier" -float "0.2" && killall Dock
+
 # Don't write .DS_Store to Network resp. USB Volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
